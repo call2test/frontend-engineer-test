@@ -9,60 +9,19 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Test Instructions
 
-### `yarn test`
+Before you begin, you will need to sign up for a [Google Maps Javscript API key](https://developers.google.com/maps/documentation/javascript/get-api-key). A free one will be fine. If you are unable to do this for some reason, let us know and we can provide one for you.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork this repo.
+2. Make the changes needed to accomplish what is listed below.
+3. Deploy this somewhere and send us a link to the deployed app and the repo.
 
-### `yarn build`
+Using your best (simple) design judgment, create an app that does the following:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Fetch data from the [ABQ Film Office public dataset](https://coagisweb.cabq.gov/arcgis/rest/services/public/FilmLocations/MapServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&f=pjson). This data is a collection of locations where Films/TV/etc have been shot. Documentation found [here](http://data.cabq.gov/business/filmlocations/MetaData.pdf).
+    - We only want to see locations with a type of "movie".
+    - Keep in mind, there are multiple locations for each movie.
+- Create a `select` where we can pick a movie.
+- With a movie selected, populate the map with `Marker`s (using [@react-google-maps/api](https://react-google-maps-api-docs.netlify.com/), which is already in the package.json) with the location addresses. These can be derived from the `geometry` key sent back as part of the data. 
+- In addition to the `Marker`s, we also expect you to be able to click on the marker and see the shoot date (in human readable format), the shooting site's name, and the site's address. This can be accomplished using the `InfoWindow` component provided by the `@react-google-maps/api` package.
