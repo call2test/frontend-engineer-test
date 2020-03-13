@@ -15,7 +15,7 @@ Before you begin, you will need to sign up for a [Google Maps Javscript API key]
 
 1. Fork this repo.
 2. Make the changes needed to accomplish what is listed below.
-3. Deploy this somewhere and send us a link to the deployed app and the repo.
+3. Deploy this somewhere and send us a link to the deployed app and the repo, then we can schedule some time to meet!
 
 Using your best (simple) design judgment, create an app that does the following:
 
