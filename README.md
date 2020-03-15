@@ -19,7 +19,7 @@ Before you begin, you will need to sign up for a [Google Maps Javscript API key]
 
 Using your best (simple) design judgment, create an app that does the following:
 
-First, you may choose a data set to use: the ABQ Film Office's list of film locations, or the ABQ Public Art location list. The instructions for each are below.
+First, you may choose a data set to use: the ABQ Film Office's list of film locations, **or** the ABQ Public Art location list. The instructions for each are below.
 
 ## ABQ Film Data Instructions
 
