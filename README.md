@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # Test Instructions
 
-Before you begin, you will need to sign up for a [Google Maps Javscript API key](https://developers.google.com/maps/documentation/javascript/get-api-key). A free one will be fine. If you are unable to do this for some reason, let us know and we can provide one for you.
+Before you begin, you will need to sign up for a [Google Maps Javascript API key](https://developers.google.com/maps/documentation/javascript/get-api-key). A free one will be fine. If you are unable to do this for some reason, let us know and we can provide one for you.
 
 1. Fork this repo.
 2. Make the changes needed to accomplish what is listed below.
