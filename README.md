@@ -37,3 +37,8 @@ First, you may choose a data set to use: the ABQ Film Office's list of film loca
 - Create a `select` where we can pick a type of art.
 - With the art medium selected, populate the map with `Marker`s (using [@react-google-maps/api](https://react-google-maps-api-docs.netlify.com/), which is already in the package.json) with the location addresses. These can also be derived from the `geometry` key sent back as part of the data. 
 - In addition to the `Marker`s, we also expect you to be able to click on the marker and see the pieces title, the year it was installed, the artist's name, and a small preview of the jpg of the art piece. This can be accomplished using the `InfoWindow` component provided by the `@react-google-maps/api` package.
+
+
+> **We're aware that the ABQ Open Dataset has been timing out.** We have a download of the datasets from 03/19/2020. Of course, these datasets won't dynamically update or have any endpoint filtering. If you're having issues, please use these as an alternative: 
+> * [https://c2t-cabq-open-data.s3.amazonaws.com/film-locations-json-all-records_03-19-2020.json](https://c2t-cabq-open-data.s3.amazonaws.com/film-locations-json-all-records_03-19-2020.json)
+> * [https://c2t-cabq-open-data.s3.amazonaws.com/public-art-json-all-records_03-19-2020.json](https://c2t-cabq-open-data.s3.amazonaws.com/public-art-json-all-records_03-19-2020.json)
